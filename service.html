@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Услуга </title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" href="libs\fancybox\jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" />
+	<!-- Library http://antenna.io/demo/jquery-bar-rating/examples/ -->
+	<link rel="stylesheet" href="libs/jquery-bar-rating-master/dist/fontawesome-stars.css">
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    
+	
+
+
+     <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script  src="libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script  src="libs/bootstrap-datepicker/js/bootstrap-datepicker.ru.min.js"></script>
+    <script  src="libs/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script>
+    <script  src="libs/noUiSlider.9.2.0/nouislider.min.js"></script>
+   
+    
+    <script src="libs/mask/mask.js"></script>
+    <script type="text/javascript" src="libs/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<div id="thanks" style="display: none">
+	<div class="logo-image">
+    	<img src="img/logo-small.png" alt="">
+    </div>
+    <h2>Спасибо за оставленный отзыв
+</h2>
+    <div class="small-text">
+    	мы следим за качеством предоставляемых услуг и<br class="hide-xs"> Ваши отзывы очень помогают нам в этом. 
+    	
+    </div>
+</div>
+<div class="outer-modal"> 
+    <div id="myModal" class="modal review-modal">
+        <div class="modal-content">
+            <div class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="logo-image">
+            	<img src="img/logo-small.png" alt="">
+            </div>
+            <h2>Благодорим</h2>
+            <div class="small-text">
+            	вас за то, что воспользовалисиь платфомой <br class="hide-xs"> Ваш отзыв очень важен для нас
+            </div>
+            <form action="">
+            <div class="group-review">
+            	<div class="name-block">1. Поставьте оценку события*:</div>
+            	<div class="for-input">
+            		<select class="rating-change-js small-rating">
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					</select>
+            	</div>
+            </div>
+            <div class="group-review">
+            	<div class="name-block">2. Укажите Ваш уникальный номер активности*:</div>
+            	<div class="sub-text">*Он указан в теме письма или н самом [сертификате/билете]</div>
+            	<div class="for-input">
+            		<input type="text" placeholder="Форма в которой указывают номер [билета]" >
+            	</div>
+            </div>
+            <div class="group-review">
+            	<div class="name-block">3. Текст отзыва*:</div>
+            	<div class="for-input">
+            		<textarea name="" placeholder="Тут напишите ваши впечатления после посещения события..."></textarea>
+            	</div>
+            	<div class="all-checkboxs">
+	            	<div class="checkbox-block">
+	            		<label >
+							<input type="checkbox">
+							<div class="custom-check">
+								<img src="img/lick.png" alt="">
+							</div>
+						</label>
+						<div class="text-for-check">Подписать отзыв Вашим именем</div>
+	            	</div>
+	            	<div class="checkbox-block">
+	            		<label >
+							<input type="checkbox">
+							<div class="custom-check">
+								<img src="img/lick.png" alt="">
+							</div>
+						</label>
+						<div class="text-for-check">Указать другое имя для подписи</div>
+	            	</div>
+            	</div>
+            	<div class="for-input">
+            		<input type="text" class="center-align" placeholder="Указать Имя/Логин">
+            	</div>
+            	<div class="submit-button">
+            		<input type="submit" value="Оставить отзыв" class="btn">
+            	</div>
+            	<div class="polit">
+            		Политика конфиденциальноси...
+            	</div>
+            	</form>
+            </div>
+    	</div>
+    </div>
+</div>
+
+<body >
+    <div id="thanks" style="display: none">Спасибо! регистрация прошла успешно!</div>
+	<div class="outer-modal"> 
+    <div id="myModal" class="modal order-modal">
+        <div class="modal-content">
+            <div class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <h2>Отличный выбор</h2>
+            <div class="small-text">Можете завершить оформление или подобрать еще [активность] на ваш вкус</div>
+            <div class="service-block">
+    			<div class="half for-image">
+    				<img src="img/service.png" alt="">
+    			</div>
+    			<div class="half info-block">
+    				<div class="title">Рафтинг на Южном Буге</div>
+    				<div class="place">г. Днепроджержинск</div>
+    				<div class="order-more">
+    					<div class="half">
+    						<img src="img/bucket-calendar.png" alt="">
+    						<span>4.22.2012</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-clock.png" alt="">
+    						<span>2 часа</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-man.png" alt="">
+    						<span>x 2 взрослых</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-boy.png" alt="">
+    						<span>x 2 детских</span>
+    					</div>
+    				</div>
+    				<div class="for-half">
+    					<div class="price">100$</div>
+    					<div class="right-align"><a class="remove">Удалить</a></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="service-block">
+    			<div class="half for-image">
+    				<img src="img/service.png" alt="">
+    			</div>
+    			<div class="half info-block">
+    				<div class="title">Рафтинг на Южном Буге</div>
+    				<div class="place">г. Днепроджержинск</div>
+    				<div class="order-more">
+    					<div class="half">
+    						<img src="img/bucket-calendar.png" alt="">
+    						<span>4.22.2012</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-clock.png" alt="">
+    						<span>2 часа</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-man.png" alt="">
+    						<span>x 2 взрослых</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-boy.png" alt="">
+    						<span>x 2 детских</span>
+    					</div>
+    				</div>
+    				<div class="for-half">
+    					<div class="price">100$</div>
+    					<div class="right-align"><a class="remove">Удалить</a></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="button-block">
+    			<a href="" class="btn">Оформить ЗАКАЗ</a>
+    			<a href="" class="more-feel">Выбрать еще впечетления</a>
+    		</div>
+        </div>
+    </div>
+	</div>
+    <header class="service-header">
+        <div class="container">
+		    <div class="row front">
+		        <div class='col-md-2 col-lg-3 col-sm-12 mobile-center small-logo'>
+			        <img src="img/logo-small.png" alt="">
+		        </div>
+		        <div class="col-md-10 col-lg-9 col-sm-12 center-align ">
+		        	<div class="wrapper-select mobile-block">
+			        	<img src="img/rus.png" alt="">
+			            <select name="valute" id="valute" >
+			            	<option value="" disabled selected hidden>Валюта</option>
+			                <option value=""> UAH</option>
+			                <option value=""> RUB</option>
+			            </select>
+
+			            <label for="valute" class="custom-select">
+			                <i class="fa fa-angle-down" aria-hidden="true"></i>
+			            </label>
+			        </div>
+		            <div class="wrapper-select mobile-block">
+			        	<img src="img/rus.png" alt="">
+			            <select name="lval" id="lang" >
+			            	<option value="" disabled selected hidden>Язык</option>
+			                <option value=""> Русский</option>
+			                <option value=""> English</option>
+			            </select>
+
+			            <label for="lang" class="custom-select">
+			                <i class="fa fa-angle-down" aria-hidden="true"></i>
+			            </label>
+			        </div>
+		        	<div class="logo-text mobile-block">
+		        		<img src="img/dollar.png" alt="">
+		        		<span>Зарабатывай с Raido</span>
+		        	</div>
+		        	<div class="sign-in mobile-block">
+		        		<a href="" class="btn">Войти</a>
+		        		<a href="" class="reg">Регистрация</a>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+	 </header>
+	<nav>
+		<div class="container">
+			<div class="row front">
+			<div class="col-md-12">
+				<div class="menu">
+					<div>
+						<a href="">Главная</a>
+					</div>
+					<div>
+						<a href="">Поиcк активностей</a>
+					</div>
+					<div>
+						<a href="">Лекции</a>
+					</div>
+					<div>
+						<a href="">Новости</a>
+					</div>
+					<div>
+						<a href="">Связаться с нами</a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="result-search">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-8">
+					<div class="inline bold upper">
+						<img src="" alt="">
+						<span class="text">Днепроджинск</span>
+					</div>
+					<div class="inline ">
+						<img src="" alt="">
+						<span class="text">Екстримальный - приключенчиский</span>
+					</div>
+					<div class="inline">
+						<img src="" alt="">
+						<span class="text small">4/22/2012 - 6/22/2012</span>
+					</div>
+				</div>
+				<div class="col-md-4 right-align left-mobile">
+					<a href="" class="blue inline border-dashed bold">
+						Изменить условия поиска
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-service">
+		<img src="img/about-service-side.png" class="side-picture left about-side" alt="">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12 prev-result">
+					<i class="fa fa-angle-left" aria-hidden="true"></i> Назад к результатам
+				</div>
+				<div class="col-md-6">
+					<div class="main-slider">
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+					</div>
+					<div class="wrapper-slider">
+						<div class="nav-slider">
+							<div><img src="img/slider.png" alt=""></div>
+							<div><img src="img/slider.png" alt=""></div>
+							<div><img src="img/slider.png" alt=""></div>
+							<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						<div><img src="img/slider.png" alt=""></div>
+						</div>
+						<div class="left-arrear slider-set">
+							<i class="fa fa-angle-left" aria-hidden="true"></i>
+						</div>
+						<div class="right-arrear slider-set">
+							<i class="fa fa-angle-right" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="title-block">Рафтинг на Южном Буге</div>
+					<div class="town">г. Днепроджержинск</div>
+					<div class="icon-block">
+						<div class="inline">
+							<img src="img/extreme.png" alt="">
+							<span class="text">Екстримальный</span>
+						</div>
+						<div class="inline">
+							<img src="img/bucket-clock.png" alt="">
+							<span class="text small">2 часа</span>
+						</div>
+						<div class="inline">
+							<img src="img/checked-square.png" alt="">
+							<span class="text">Проверено платформой</span>
+						</div>
+					</div>
+					<div class="rating-block">
+						<select class="rating-js small-rating">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						</select>
+						<span class="count"> 56 отзывов</span>
+					</div>
+					<div class="text-sub">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem 
+					</div>
+					<div class="bottom-info">
+						
+					<div class="worth">Цена: <span class="bold purple">100$</span></div>	
+					<a href="" class="btn">Проверить наличие свободных мест</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="special-form">
+
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h3>Проверить наличие свободных мест</h3>
+					<div class="mar-table">
+						<div>	
+							<div class="inline">
+								<div>C:</div>
+								<div class="wrapper-date">  
+				 					<input type="text" class="datepicker" placeholder="4/22/2012">
+				 					<img src="img/calendar.png" alt="">
+				 				</div>
+				 			</div>							<div class="inline">
+								<div>По:</div>
+								<div class="wrapper-date">  
+				 					<input type="text" class="datepicker" placeholder="4/22/2012">
+				 					<img src="img/calendar.png" alt="">
+				 				</div>
+				 				</div>
+							</td>
+							<div class="inline center-align">
+								<a class="btn">Показать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="big-form-tour">
+						<div class="info-about">
+							<div class="bold more-info">
+								4.22.2012 <span class="upper">(наличие экскурсовода и перевода языка)</span>
+							</div>
+							<div class="icon-block">
+								<div class="inline bold">
+									<img src="img/bucket-clock.png" alt="">
+									<span class="text">2 часа</span>
+								</div>
+								<div class="inline">
+									<img src="img/cancel.png" alt="">
+									<span class="text small  green"> Бесплатная доставка</span>
+								</div>
+								<div class="inline">
+									<img src="img/bucket-calendar.png" alt="">
+									<span class="text small">до 4.22.2012</span>
+								</div>
+							</div>
+						</div>
+						<form action="" >
+							<div class="inline">
+								<div>Дата</div>
+								<div class="wrap-select">
+									<select name="date" id="date" >
+						            	<option value="" disabled selected hidden>2.22.12</option>
+						                <option value=""> Русский</option>
+						                <option value=""> English</option>
+						            </select>
+						            <label for="date" class="arrow-down">
+						            </label>
+								</div>
+							</div>
+							<div class="inline">
+								<div>Взрослые от 8+ (1*100$)</div>
+								<div class="wrap-select">
+									<select name="big" id="big" >
+						            	<option value="" disabled selected hidden>Кол-во взрослых</option>
+						                <option value=""> Русский</option>
+						                <option value=""> English</option>
+						            </select>
+						            <label for="big" class="arrow-down">
+						            </label>
+								</div>
+							</div>
+							<div class="inline">
+								<div>Дети от 3-7 (1*100$)</div>
+								<div class="wrap-select">
+									<select name="small" id="small" >
+						            	<option value="" disabled selected hidden>Кол-во детей</option>
+						                <option value=""> Русский</option>
+						                <option value=""> English</option>
+						            </select>
+						            <label for="small" class="arrow-down">
+						            </dlabel>
+								</div>
+							</div>
+							<div class="inline order-button">
+								<div>Итого: <span class="price upper purple bold">100%</span></div>
+								<a href="" class="btn order-js">Заказать</a>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="map-place">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-6 for-image m-bot">
+					<img src="img/map.png" alt="">
+				</div>
+				<div class="col-md-6">
+					<div class="title-block">Рафтинг на Южном Буге</div>
+					<div class="text-town upper bold">
+						Место встречи
+					</div>
+					<div class="text-sub">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blue-back section-pad-70">
+		<img src="img/service-side-1.png" class="side-picture custom-1 right" alt="">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Подробное описание</h2>
+					<div class="text-description">
+						Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-pad-70">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Особенности</h2>
+				</div>
+				<div class="clearfix"></div>
+				<div class="m-top-40">
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-pad-70 blue-back">
+		<img src="img/service-side-2.png" class="side-picture custom-2 left" alt="">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Включено в услугу</h2>
+				</div>
+				<div class="clearfix"></div>
+				<div class="m-top-40">
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-pad-70">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Знать до заказа</h2>
+				</div>
+				<div class="clearfix"></div>
+
+				<div class="m-top-40">
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xs-6 checked">
+						<label class="circle-check">
+							<input type="checkbox" checked="">
+							<div><img src="img/check.png" alt=""></div>
+						</label>
+						<span>Lorem ipsum.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blue-back section-pad-70">
+		<img src="img/service-side-3.png" class="side-picture custom-3 right" alt="">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Политика отмены заказа</h2>
+					<div class="text-description">Политика отмены Вы не можете отмнить бесплатно до 72 часов д начала бронирования. По истечении этого времени не будет сделано никаких отмен, изменения или возврат денег.m 
+					</div><div></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class=" section-pad-70">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Место</h2>
+					<div class="text-description">
+						Страна/город/адрем
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blue-back section-pad-60">
+		<img src="img/service-side-4.png" class="side-picture custom-4 left" alt="">
+		<div class="container">
+			<div class="row front">
+				<div class="col-md-12">
+					<h2>Отзывы</h2>
+					<div class="wrapper-review-info">
+						<div class="count">(всего отзывов 56)</div>
+						<div class="right-align"><a class="leave-review review-js">Оставить отзыв</a></div>
+					</div>
+				</div>
+				<div class="all-reviews col-md-12">
+					<div class="single-review">
+						<div class="name">Сергей Бугайов</div>
+						<div>
+							<select class="rating-js small-rating">
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							</select>
+						</div>
+						<div class="text-review">
+							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem 
+						</div>
+						<div class="date right-align">
+							<img src="img/bucket-calendar.png" alt="">
+							<span>4.22.2012</span>
+						</div>
+					</div>
+					<div class="single-review">
+						<div class="name">Сергей Бугайов</div>
+						<div>
+							<select class="rating-js small-rating">
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							  <option value="4">4</option>
+							  <option value="5">5</option>
+							</select>
+						</div>
+						<div class="text-review">
+							Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem 
+						</div>
+						<div class="date right-align">
+							<img src="img/bucket-calendar.png" alt="">
+							<span>4.22.2012</span>
+						</div>
+					</div>
+				</div>
+				<div class="more-review center-align">
+					<a href="" class="btn">Еще отзывы</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="popular">
+		<img src="img/popular-side.png" alt="" class="side-picture right">
+		<div class="container">
+			<div class="row front">
+				<h2>Посетившим так-же нравится:</h2>
+				<div class="all-blocks">
+					<div class="col-md-4">
+						<div class="popular-block">
+							<div class="for-image">
+								<img src="img/popular.png" alt="">
+								<div class="price">100$</div>
+							</div>
+							<div class="title">Рафтинг на Южном Буге</div>
+							<div class="bottom-info">
+								<div class="review">
+								   <select class="rating-js small-rating">
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									</select>
+									<span class="count"> 56 отзывов</span>
+								</div>
+								<div class="time">
+									<img src="img/clock.png" alt="">
+									<span>2 часа</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="popular-block">
+							<div class="for-image">
+								<img src="img/popular.png" alt="">
+								<div class="price">100$</div>
+							</div>
+							<div class="title">Рафтинг на Южном Буге</div>
+							<div class="bottom-info">
+								<div class="review">
+								   <select class="rating-js small-rating">
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									</select>
+									<span class="count"> 56 отзывов</span>
+								</div>
+								<div class="time">
+									<img src="img/clock.png" alt="">
+									<span>2 часа</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="popular-block">
+							<div class="for-image">
+								<img src="img/popular.png" alt="">
+								<div class="price">100$</div>
+							</div>
+							<div class="title">Рафтинг на Южном Буге</div>
+							<div class="bottom-info">
+								<div class="review">
+								   <select class="rating-js small-rating">
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									</select>
+									<span class="count"> 56 отзывов</span>
+								</div>
+								<div class="time">
+									<img src="img/clock.png" alt="">
+									<span>2 часа</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>Поиск</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="libs/noUiSlider.9.2.0/nouislider.min.css" />
+    <link rel="stylesheet" href="libs/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap-datepicker/css/bootstrap-datepicker3.standalone.min.css" />
+	<!-- Library http://antenna.io/demo/jquery-bar-rating/examples/ -->
+	<link rel="stylesheet" href="libs/jquery-bar-rating-master/dist/fontawesome-stars.css">
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    
+	
+
+
+     <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script  src="libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script  src="libs/bootstrap-datepicker/js/bootstrap-datepicker.ru.min.js"></script>
+    <script  src="libs/jquery-bar-rating-master/dist/jquery.barrating.min.js"></script>
+   	<script  src="libs/noUiSlider.9.2.0/nouislider.min.js"></script>
+   
+    
+    <script src="libs/mask/mask.js"></script>
+    <script type="text/javascript" src="libs/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body >
+	<div class="outer-modal"> 
+    <div id="myModal" class="modal order-modal">
+        <div class="modal-content">
+            <div class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <h2>Отличный выбор</h2>
+            <div class="small-text">Можете завершить оформление или подобрать еще [активность] на ваш вкус</div>
+            <div class="service-block">
+    			<div class="half for-image">
+    				<img src="img/service.png" alt="">
+    			</div>
+    			<div class="half info-block">
+    				<div class="title">Рафтинг на Южном Буге</div>
+    				<div class="place">г. Днепроджержинск</div>
+    				<div class="order-more">
+    					<div class="half">
+    						<img src="img/bucket-calendar.png" alt="">
+    						<span>4.22.2012</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-clock.png" alt="">
+    						<span>2 часа</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-man.png" alt="">
+    						<span>x 2 взрослых</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-boy.png" alt="">
+    						<span>x 2 детских</span>
+    					</div>
+    				</div>
+    				<div class="for-half">
+    					<div class="price">100$</div>
+    					<div class="right-align"><a class="remove">Удалить</a></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="service-block">
+    			<div class="half for-image">
+    				<img src="img/service.png" alt="">
+    			</div>
+    			<div class="half info-block">
+    				<div class="title">Рафтинг на Южном Буге</div>
+    				<div class="place">г. Днепроджержинск</div>
+    				<div class="order-more">
+    					<div class="half">
+    						<img src="img/bucket-calendar.png" alt="">
+    						<span>4.22.2012</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-clock.png" alt="">
+    						<span>2 часа</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-man.png" alt="">
+    						<span>x 2 взрослых</span>
+    					</div>
+    					<div class="half">
+    						<img src="img/bucket-boy.png" alt="">
+    						<span>x 2 детских</span>
+    					</div>
+    				</div>
+    				<div class="for-half">
+    					<div class="price">100$</div>
+    					<div class="right-align"><a class="remove">Удалить</a></div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="button-block">
+    			<a href="" class="btn">Оформить ЗАКАЗ</a>
+    			<a href="" class="more-feel">Выбрать еще впечетления</a>
+    		</div>
+        </div>
+    </div>
+	</div>
+    <header class="service-header">
+        <div class="container">
+		    <div class="row front">
+		        <div class='col-md-2 col-lg-3 col-sm-12 mobile-center small-logo'>
+			        <img src="img/logo-small.png" alt="">
+		        </div>
+		        <div class="col-md-10 col-lg-9 col-sm-12 center-align ">
+		        	<div class="wrapper-select mobile-block">
+			        	<img src="img/rus.png" alt="">
+			            <select name="valute" id="valute" >
+			            	<option value="" disabled selected hidden>Валюта</option>
+			                <option value=""> UAH</option>
+			                <option value=""> RUB</option>
+			            </select>
+
+			            <label for="valute" class="custom-select">
+			                <i class="fa fa-angle-down" aria-hidden="true"></i>
+			            </label>
+			        </div>
+		            <div class="wrapper-select mobile-block">
+			        	<img src="img/rus.png" alt="">
+			            <select name="lval" id="lang" >
+			            	<option value="" disabled selected hidden>Язык</option>
+			                <option value=""> Русский</option>
+			                <option value=""> English</option>
+			            </select>
+
+			            <label for="lang" class="custom-select">
+			                <i class="fa fa-angle-down" aria-hidden="true"></i>
+			            </label>
+			        </div>
+		        	<div class="logo-text mobile-block">
+		        		<img src="img/dollar.png" alt="">
+		        		<span>Зарабатывай с Raido</span>
+		        	</div>
+		        	<div class="sign-in mobile-block">
+		        		<a href="" class="btn">Войти</a>
+		        		<a href="" class="reg">Регистрация</a>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+	 </header>
+	<nav>
+		<div class="container">
+			<div class="row front">
+			<div class="col-md-12">
+				<div class="menu">
+					<div>
+						<a href="">Главная</a>
+					</div>
+					<div>
+						<a href="">Поиcк активностей</a>
+					</div>
+					<div>
+						<a href="">Лекции</a>
+					</div>
+					<div>
+						<a href="">Новости</a>
+					</div>
+					<div>
+						<a href="">Связаться с нами</a>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="search">
+		<div class="container">
+			<div class="row front">
+				<h2 class="center-align">Укажите критерии поиска</h2>
+				<form action="">
+					<div class="input-block">
+						<div >
+							<input type="text" placeholder="Город" class="big-input">
+						</div>
+						
+						<div>
+							<div class="wrap-select">
+								<select name="type" id="big" class="big-input">
+					            	<option value="" disabled selected hidden>Кол-во взрослых</option>
+					                <option value=""> Русский</option>
+					                <option value=""> English</option>
+					            </select>
+					            <label for="big" class="arrow-down">
+					            </label>
+							</div>
+						</div>
+						<div >
+							<input type="text" class="small-input" placeholder="Кол-во">
+						</div>
+						<div>
+							<div class="wrapper-date">  
+			 					<input class="small-input datepicker" type="text" placeholder="4/22/2012">
+			 					<img src="img/calendar.png" alt="">
+			 				</div>
+						</div>
+						<div>
+							<div class="wrapper-date">  
+			 					<input  class="small-input datepicker" type="text" placeholder="4/22/2012">
+			 					<img src="img/calendar.png" alt="">
+			 				</div>
+						</div>
+					</div>
+					<div class="budget-block">
+						<div class="left">
+							<h3>Или просто укажите бюджет</h3>
+							<div class="wrapper-range">
+								<div  id="slider-range"></div>
+								<div class="value">
+									<div class="left-value">4</div>
+									<div class="right-value right-align">634s</div>
+								</div>
+							</div>
+						</div>
+						<div class="right right-align">
+							<a href="" class="btn">подобрать</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="result">
+		<img src="img/search-side-1.png" class="side-picture left search-1" alt="">
+		<img src="img/search-side-2.png" class="side-picture right search-2" alt="">
+		<div class="container">
+			<div class="row front">
+					<div class="col-md-12 col-lg-6 mobile-center">
+						<div class="result-text">
+							<span class="blue">12</span> активностей найдено в <span class="blue">Днепроджинск</span
+						></div>
+					</div>
+					<div class="col-md-12 col-lg-6 sort right-align mobile-center">
+						<span class="sort-text">Сортировать:</span>
+						<label class="switch">
+							<input type="checkbox">
+							<div class="slider-switch">
+								<span >По цене</span>
+								<span >По популярности</span>
+							</div>
+						</label>
+					</div>
+					<div class="clearfix"></div>
+					<div class="result-blocks">
+						<div class="col-md-3">
+							<div class="paramets">
+								<div class="header">Поиск по</div>
+								<div class="category-block">
+									<div class="category-name">Категориям</div>
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+								</div>
+								<div class="category-block">
+									<div class="category-name">Категориям</div>
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+									<div class="category">
+										<div class="changer">
+											<label class="sw">
+											  <input type="checkbox">
+											  <div class="slider"></div>
+											</label>
+										</div>
+										<div class="text">Критерий 1</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="search-blocks">
+								<div class="block">
+									<div class="for-image">
+										<img src="img/slider.png" alt="">
+									</div>
+									<div class="info">
+										<div class="title">Рафтинг на Южном Буге</div>
+										<div class="town">г. Днепроджержинск</div>
+										<div class="review">
+										   <select class="rating-js small-rating">
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											</select>
+											<span class="count"> 56 отзывов</span>
+										</div>
+										<div class="main-text">
+											Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+										</div>
+										<div class="bottom">
+											<div class="time">
+												<img src="img/clock.png" alt="">
+												<span class="bold">2 часа</span>
+											</div>
+											<div class="price">
+												100$
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="block">
+									<div class="for-image">
+										<img src="img/slider.png" alt="">
+									</div>
+									<div class="info">
+										<div class="title">Рафтинг на Южном Буге</div>
+										<div class="town">г. Днепроджержинск</div>
+										<div class="review">
+										   <select class="rating-js small-rating">
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											</select>
+											<span class="count"> 56 отзывов</span>
+										</div>
+										<div class="main-text">
+											Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+										</div>
+										<div class="bottom">
+											<div class="time">
+												<img src="img/clock.png" alt="">
+												<span class="bold">2 часа</span>
+											</div>
+											<div class="price">
+												100$
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="block">
+									<div class="for-image">
+										<img src="img/slider.png" alt="">
+									</div>
+									<div class="info">
+										<div class="title">Рафтинг на Южном Буге</div>
+										<div class="town">г. Днепроджержинск</div>
+										<div class="review">
+										   <select class="rating-js small-rating">
+											  <option value="1">1</option>
+											  <option value="2">2</option>
+											  <option value="3">3</option>
+											  <option value="4">4</option>
+											  <option value="5">5</option>
+											</select>
+											<span class="count"> 56 отзывов</span>
+										</div>
+										<div class="main-text">
+											Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров 
+										</div>
+										<div class="bottom">
+											<div class="time">
+												<img src="img/clock.png" alt="">
+												<span class="bold">2 часа</span>
+											</div>
+											<div class="price">
+												100$
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="show-more">
+								<a class="btn">Показать еще</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
